@@ -5,8 +5,8 @@ html {
 
 /* Gaya umum body */
 body {
-  background-color: #ede69b;
-  color: #333;
+  background-color: #887fa7;
+  color: #836998;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -14,8 +14,8 @@ body {
 
 /* Navbar */
 nav {
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ccc;
+  background-color: #c38ee1;
+  border-bottom: 1px solid #8662a1;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   padding: 0.5rem 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -32,14 +32,14 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #eee;
+  background-color: #9e6eab;
 }
 
 /* Form input dan textarea */
 input[type="text"],
 input[type="date"],
 textarea {
-  border: 1px solid #ccc;
+  border: 1px solid #8b5f98;
   padding: 0.5rem;
   border-radius: 4px;
   width: 100%;
@@ -54,7 +54,7 @@ textarea {
 /* Button submit */
 button[type="submit"] {
   background-color: #2563eb; /* blue-600 */
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 0.5rem 1rem;
   font-size: 14px;
   border: none;
@@ -69,16 +69,16 @@ button[type="submit"]:hover {
 /* Info box tampilan */
 #infoBox {
   margin-top: 1rem;
-  background-color: #f3f4f6; /* gray-100 */
+  background-color: #000000; /* gray-100 */
   padding: 1rem;
   border-radius: 4px;
-  border: 1px solid #d1d5db; /* gray-300 */
+  border: 1px solid #000000; /* gray-300 */
 }
 
 /* Footer kecil */
 footer {
   font-size: 10px;
-  color: #888;
+  color: #000000;
   text-align: right;
   padding: 0.5rem;
 }
