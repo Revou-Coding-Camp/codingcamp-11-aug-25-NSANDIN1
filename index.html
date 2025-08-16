@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CODE LABS</title>
+  <link rel="shortcut icon" href="C.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css" />
   <link
@@ -11,8 +12,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
   />
 </head>
-<body class="bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 text-gray-100 font-sans text-base scroll-smooth" style="background-color: #752f80;"
-></body>
+<body class="bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 text-gray-100 font-sans text-base scroll-smooth">
 
   <!-- Wrapper -->
   <div class="max-w-screen-lg mx-auto shadow-lg border border-gray-300 mt-4">
@@ -35,7 +35,7 @@
     <nav class="flex justify-center gap-4 py-4 bg-white sticky top-0 z-10 border-b border-gray-200">
       <a href="#home" class="px-4 py-2 border border-gray-500 rounded hover:bg-gray-800 text-gray-900">Home</a>
       <a href="#profile" class="px-4 py-2 border border-gray-500 rounded hover:bg-gray-800 text-gray-900">Our Profile</a>
-      <a href="#portofolio" class="px-4 py-2 border border-gray-500 rounded hover:bg-gray-800 text-gray-900">Portfolio</a>
+      <a href="#portfolio" class="px-4 py-2 border border-gray-500 rounded hover:bg-gray-800 text-gray-900">Portfolio</a>
       <a href="#message" class="px-4 py-2 border border-gray-500 rounded hover:bg-gray-800 text-gray-900">Message Us</a>
     </nav>
 
@@ -46,77 +46,111 @@
     </section>
 
     <!-- Profile -->
-<section id="profile" class="bg-gray-50 py-10 px-6 text-black">
-  <h2 class="text-xl font-bold mb-4 text-center">Our Profile</h2>
-  <div class="grid md:grid-cols-2 gap-6">
-    <div>
-      <img src="assets/images/company-banner.jpg" alt="Company Banner" class="w-full rounded shadow" /> 
-    </div>
-    <div class="space-y-4">
-      <p><b>About Us:</b> We’re a creative tech powerhouse, turning bold ideas into cutting-edge software and groundbreaking digital experiences.</p>
-      <p><b>Vision:</b> To shape the future of technology and become a pioneer in Southeast Asia’s digital revolution.</p>
-      <p><b>Mission:</b> To craft impactful, user-driven solutions that inspire innovation and empower communities worldwide.</p>
-    </div>
-  </div>
-</section>
-
+    <section id="profile" class="bg-gray-50 py-10 px-6 text-black">
+      <h2 class="text-xl font-bold mb-4 text-center">Our Profile</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <img src="C (1).png" alt="Company Banner" width="350" height="100">
+        </div>
+        <div class="space-y-4">
+          <p><b>About Us:</b> We’re a creative tech powerhouse, turning bold ideas into cutting-edge software and groundbreaking digital experiences.</p>
+          <p><b>Mission:</b></p>
+          <ol class="list-decimal ml-5">
+            <li>Emphasizes your ambition to pioneer and set trends in the region’s tech landscape.</li>
+            <li>Highlights your role as a catalyst for widespread digital adoption and modernization.</li>
+            <li>Reflects your commitment to long-term, sustainable technological progress.</li>
+          </ol>
+          <p><b>Vision:</b> To craft impactful, user-driven solutions that inspire innovation and empower communities worldwide.</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Portfolio -->
     <section id="portfolio" class="py-10 px-6">
       <h2 class="text-xl font-bold mb-4 text-center">Our Portfolio</h2>
       <div class="grid md:grid-cols-3 gap-4">
-        <img src="assets/images/mobile-app-development.jpg" alt="Mobile App" class="mb-2 w-full rounded" />
-        <img src="assets/images/website-projects.jpg" alt="Website Projects" class="mb-2 w-full rounded" />
-        <img src="assets/images/tech-consultancy.jpg" alt="Tech Consultancy" class="mb-2 w-full rounded" />
-    </div>
+        <div class="relative group">
+          <img src="C (2).png" alt="Mobile App" class="mb-2 w-full rounded" />
+          <span class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm text-white bg-gray-700 rounded opacity-0 transition-opacity group-hover:opacity-100">
+            Mobile App
+          </span>
+        </div>
+        <div class="relative group">
+          <img src="C (3).png" alt="Website Projects" class="mb-2 w-full rounded" />
+          <span class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm text-white bg-gray-700 rounded opacity-0 transition-opacity group-hover:opacity-100">
+            Website Projects
+          </span>
+        </div>
+        <div class="relative group">
+          <img src="C (4).png" alt="Digital Marketing" class="mb-2 w-full rounded" />
+          <span class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm text-white bg-gray-700 rounded opacity-0 transition-opacity group-hover:opacity-100">
+            Digital Marketing
+          </span>
+        </div>
+      </div>
     </section>
 
     <!-- Message Us -->
-<section id="message" class="bg-gray-50 py-10 px-6 text-black">
-  <h2 class="text-xl font-bold mb-4 text-center">Message Us</h2>
-  <div class="flex flex-col md:flex-row gap-6">
-    <form id="messageForm" class="flex flex-col gap-3 md:w-1/2">
-      <label>
-        Nama:
-        <input type="text" name="name" required class="w-full border px-3 py-2 rounded" />
-      </label>
-      <label>
-        Tanggal Lahir:
-        <input type="date" name="birthdate" required class="w-full border px-3 py-2 rounded" />
-      </label>
-      <label>Jenis Kelamin:</label>
-      <div class="flex gap-4 text-sm">
-        <label><input type="radio" name="gender" value="Laki-Laki" /> Laki-Laki</label>
-        <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
-      </div>
-      <label>
-        Pesan:
-        <textarea name="message" rows="4" required class="w-full border px-3 py-2 rounded"></textarea>
-      </label>
-      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">
-        Submit
-      </button>
-    </form>
+    <section id="message" class="bg-gray-50 py-10 px-6 text-black">
+      <h2 class="text-xl font-bold mb-4 text-center">Message Us</h2>
+      <div class="flex flex-col md:flex-row gap-6">
+        <form id="messageForm" class="flex flex-col gap-3 md:w-1/2">
+          <label>
+            Nama:
+            <input type="text" name="name" required class="w-full border px-3 py-2 rounded" />
+          </label>
+          <label>
+            Tanggal Lahir:
+            <input type="date" name="birthdate" required class="w-full border px-3 py-2 rounded" />
+          </label>
+          <label>Jenis Kelamin:</label>
+          <div class="flex gap-4 text-sm">
+            <label><input type="radio" name="gender" value="Laki-Laki" /> Laki-Laki</label>
+            <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+          </div>
+          <label>
+            Pesan:
+            <textarea name="message" rows="4" required class="w-full border px-3 py-2 rounded"></textarea>
+          </label>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">
+            Submit
+          </button>
+        </form>
 
-    <div id="infoBox" class="border p-4 rounded md:w-1/2 bg-white text-sm leading-relaxed">
-      <div class="mb-2 font-bold">Current time :</div>
-      <div id="currentTime" class="mb-4">Loading...</div>
-      <div>
-        <b>Nama:</b> - <br />
-        <b>Tanggal Lahir:</b> - <br />
-        <b>Jenis Kelamin:</b> - <br />
-        <b>Pesan:</b> -
+        <div id="infoBox" class="border p-4 rounded md:w-1/2 bg-white text-sm leading-relaxed">
+          <div class="mb-2 font-bold">Current time :</div>
+          <div id="currentTime" class="mb-4">Loading...</div>
+          <div>
+            <b>Nama:</b> - <br />
+            <b>Tanggal Lahir:</b> - <br />
+            <b>Jenis Kelamin:</b> - <br />
+            <b>Pesan:</b> -
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer class="text-xs text-center py-3 border-t border-gray-200">
-      &copy; 2025 RevoU Project 
+      &copy; 2025 RevoU Project | NSANDIN1
     </footer>
   </div>
 
+  <!-- Script -->
   <script src="js/script.js"></script>
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+      if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      toggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+      });
+    }
+  </script>
 </body>
 </html>

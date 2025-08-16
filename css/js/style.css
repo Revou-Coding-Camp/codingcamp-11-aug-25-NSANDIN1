@@ -12,6 +12,7 @@ body {
   padding: 0;
 }
 
+
 /* Navbar */
 nav {
   background-color: #c38ee1;
@@ -45,6 +46,35 @@ textarea {
   width: 100%;
   font-size: 14px;
   box-sizing: border-box;
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px; /* Setengah dari width */
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 }
 
 textarea {
